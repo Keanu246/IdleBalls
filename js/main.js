@@ -544,6 +544,7 @@ function toggleNightMode(){
     document.getElementById("Options").style.border = "1px solid #000000"; 
     document.getElementById("Changelog").style.border = "1px solid #000000"; 
     document.getElementById("Special").style.border = "1px solid #000000"; 
+    document.getElementById("Buy").style.border = "1px solid #000000"; 
   } 
   else{ 
     nightMode = true; 
