@@ -788,35 +788,13 @@ function changeNotation(){
   } 
 }
 
-function buy1(){
-  if(tempBall.cost){
-    buy1 += 1;
-    document.getElementById("buy1").innerHTML = "Buy 1";
-  else if(tempBall.rank){
-    buy1 += 1;
-    document.getElementById("buy1").innerHTML = "Buy 1";
-    }
-  }
-}
-
-function buy10(){
-  if(tempBall.cost){
-    buy10 += 10;
-    document.getElementById("buy1").innerHTML = "Buy 10";
-  else if(tempBall.rank){
-    buy10 += 10;
-    document.getElementById("buy1").innerHTML = "Buy 10";
-    }
-  }
-}
-
 function buy100(){
   if(tempBall.cost){
-    buy100 += 100;
-    document.getElementById("buy1").innerHTML = "Buy 100";
+    cost = cost * 1.10;
+    document.getElementById("buy100").innerHTML = "Buy 100";
   else if(tempBall.rank){
-    buy100 += 100;
-    document.getElementById("buy1").innerHTML = "Buy 100";
+    rank = rank + 100;
+    document.getElementById("buy100").innerHTML = "Buy 100";
     }
   }
 }
