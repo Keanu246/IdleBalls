@@ -564,6 +564,7 @@ function toggleNightMode(){
     document.getElementById("Options").style.border = "1px solid #ffffff"; 
     document.getElementById("Changelog").style.border = "1px solid #ffffff"; 
     document.getElementById("Special").style.border = "1px solid #ffffff";
+    document.getElementById("Buy").style.border = "1px solid #ffffff";
   }
 }
 function wipeSave(){ 
