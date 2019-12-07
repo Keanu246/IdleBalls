@@ -318,8 +318,8 @@ function init(){
       document.getElementById("IncomeMulti").innerHTML = numberformat.format(ballPoints*100*ballPointMulti); 
     } 
     else{ 
-      document.getElementById("BP").innerHTML = numberformat.format(ballPoints, {format: 'scientific'}); 
-      document.getElementById("IncomeMulti").innerHTML = numberformat.format(ballPoints*100, {format: 'scientific'}); 
+      document.getElementById("BP").innerHTML = numberformat.format(ballPoints, {format: 'standard'}); 
+      document.getElementById("IncomeMulti").innerHTML = numberformat.format(ballPoints*100, {format: 'standard'}); 
     } 
     if(typeof savegame.clicks !== "undefined"){ 
       start = savegame.clicks; 
@@ -787,3 +787,13 @@ function changeNotation(){
     document.getElementById("notation").innerHTML = "Change Notation to Standard"; 
   } 
 }
+
+function buy1(){
+  if(tempBall.cost){
+    buy1 += 1;
+    document.getElementById("buy1").innerHTML = "Buy 1";
+  else if(tempBall.rank){
+    buy1 += 1;
+    document.getElementById("buy1").innerHTML = "Buy 1";
+    }
+ }
