@@ -796,4 +796,5 @@ function buy1(){
     buy1 += 1;
     document.getElementById("buy1").innerHTML = "Buy 1";
     }
- }
+  }
+}
