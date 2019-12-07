@@ -3,8 +3,8 @@ var height = 900;
 var value = 0; 
 var context; 
 var level = 1; 
-var click = {multi: 1.16,rank: 1, bCost: 10,bDamage:10} 
-var baseCostMulti = 1.10; 
+var click = {multi: 1.20,rank: 1, bCost: 10,bDamage:10} 
+var baseCostMulti = 1.15; 
 var baseHealthMulti = 1.85; 
 var startingBalls = 25; 
 var balls = [ 
@@ -192,10 +192,10 @@ function levelBall(id){
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
     if(notationScientfic){ 
-        document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.10,tempBall.rank)),{format: 'scientific'}); 
+        document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.15,tempBall.rank)),{format: 'scientific'}); 
     } 
     else{ 
-        document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.10,tempBall.rank))); 
+        document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.15,tempBall.rank))); 
     } 
     document.getElementById(id+"A").innerHTML = tempBall.rank; 
     valueSet(); 
@@ -292,10 +292,10 @@ function init(){
             radius:loadBall.radius,id:loadBall.id,clone:true,speed:loadBall.speed}); 
         } 
         if(notationScientfic){ 
-            document.getElementById(loadBall.id+"C").innerHTML = numberformat.format(Math.floor(loadBall.cost*Math.pow(1.10,loadBall.rank)),{format: 'scientific'}); 
+            document.getElementById(loadBall.id+"C").innerHTML = numberformat.format(Math.floor(loadBall.cost*Math.pow(1.15,loadBall.rank)),{format: 'scientific'}); 
         } 
         else{ 
-            document.getElementById(loadBall.id+"C").innerHTML = numberformat.format(Math.floor(loadBall.cost*Math.pow(1.10,loadBall.rank))); 
+            document.getElementById(loadBall.id+"C").innerHTML = numberformat.format(Math.floor(loadBall.cost*Math.pow(1.15,loadBall.rank))); 
         } 
         document.getElementById(loadBall.id+"A").innerHTML = loadBall.rank; 
       } 
