@@ -789,10 +789,10 @@ function changeNotation(){
 }
 
 function buy100(){
-  if(tempBall.cost){
-    cost = cost * 1.10;
+  if(cost){
+    cost = cost * 1.15;
     document.getElementById("buy100").innerHTML = "Buy 100";
-  else if(tempBall.rank){
+  else if(rank){
     rank = rank + 100;
     document.getElementById("buy100").innerHTML = "Buy 100";
     }
