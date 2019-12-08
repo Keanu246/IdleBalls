@@ -191,9 +191,14 @@ function levelBall(id){
       balls.push({active:true,x:rand(100,width-100),y:rand(100,height-100),dx:.707,dy:-.707,color:tempBall.color, 
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
-    if(buy100){
+    if(buy100>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
       tempBall.rank += 100;
-      tempBall.cost *= 1.15;
+    }
+    if(buy10>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
+      tempBall.rank += 10;
+    }
+    if(buy1>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
+      tempBall.rank += 1;
     }
     if(notationScientfic){ 
         document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.15,tempBall.rank)),{format: 'scientific'}); 
