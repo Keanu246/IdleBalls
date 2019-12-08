@@ -163,13 +163,13 @@ function clickLevel(){
       clickBalls[y].rank = click.rank; 
       clickBalls[y].bDamage = click.bDamage;
     } 
-    if(buy100>=Math.floor(click.bCost*Math.pow(click.rank))){
+    if(buy100>=Math.floor(click.bCost*Math.pow(value))){
       click.rank += 100;
     }
-    if(buy10>=Math.floor(click.bCost*Math.pow(click.rank))){
+    if(buy10>=Math.floor(click.bCost*Math.pow(value))){
       click.rank += 10;
     }
-    if(buy1>=Math.floor(click.bCost*Math.pow(click.rank))){
+    if(buy1>=Math.floor(click.bCost*Math.pow(value))){
       click.rank += 1;
     }
     if(notationScientfic){ 
@@ -200,13 +200,13 @@ function levelBall(id){
       balls.push({active:true,x:rand(100,width-100),y:rand(100,height-100),dx:.707,dy:-.707,color:tempBall.color, 
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
-    if(buy100>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
+    if(buy100>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,value))){
       tempBall.rank += 100;
     }
-    if(buy10>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
+    if(buy10>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,value))){
       tempBall.rank += 10;
     }
-    if(buy1>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,tempBall.rank))){
+    if(buy1>=Math.floor(tempBall.cost*Math.pow(baseCostMulti,value))){
       tempBall.rank += 1;
     }
     if(notationScientfic){ 
