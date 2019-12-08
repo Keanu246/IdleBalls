@@ -66,6 +66,7 @@ var autoExcites;
 var buy1 = 1;
 var buy10 = 10;
 var buy100 = 100;
+var buymax = -1;
 //CPS stuff 
 var cps = document.getElementById("cps"); 
 var count = 0; 
@@ -163,14 +164,17 @@ function clickLevel(){
       clickBalls[y].rank = click.rank; 
       clickBalls[y].bDamage = click.bDamage;
     } 
-    if(buy100>=Math.floor(click.bCost)){
+    if(buy100){
       click.rank += 100;
+      click.bCost = value;
     }
-    if(buy10>=Math.floor(click.bCost)){
+    if(buy10){
       click.rank += 10;
+      click.bCost = value;
     }
-    if(buy1>=Math.floor(click.bCost)){
+    if(buy1){
       click.rank += 1;
+      click.bCost = value;
     }
     if(notationScientfic){ 
         document.getElementById("CC").innerHTML = numberformat.format(Math.floor(click.bCost*Math.pow(click.multi,click.rank)),{format: 'scientific'}); 
@@ -200,14 +204,17 @@ function levelBall(id){
       balls.push({active:true,x:rand(100,width-100),y:rand(100,height-100),dx:.707,dy:-.707,color:tempBall.color, 
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
-    if(buy100>=Math.floor(tempBall.cost)){
+    if(buy100){
       tempBall.rank += 100;
+      tempBall.cost = value;
     }
-    if(buy10>=Math.floor(tempBall.cost)){
+    if(buy10){
       tempBall.rank += 10;
+      tempBall.cost = value;
     }
-    if(buy1>=Math.floor(tempBall.cost)){
+    if(buy1){
       tempBall.rank += 1;
+      tempBall.cost = value;
     }
     if(notationScientfic){ 
         document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.15,tempBall.rank)),{format: 'scientific'}); 
