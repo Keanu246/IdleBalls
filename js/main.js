@@ -176,6 +176,10 @@ function clickLevel(){
       click.rank += 1;
       click.bCost = value;
     }
+    if(buymax){
+      click.rank *= 2;
+      click.bCost = value;
+    }
     if(notationScientfic){ 
         document.getElementById("CC").innerHTML = numberformat.format(Math.floor(click.bCost*Math.pow(click.multi,click.rank)),{format: 'scientific'}); 
     } 
@@ -214,6 +218,10 @@ function levelBall(id){
     }
     if(buy1){
       tempBall.rank += 1;
+      tempBall.cost = value;
+    }
+    if(buymax){
+      tempBall.rank *= 2;
       tempBall.cost = value;
     }
     if(notationScientfic){ 
