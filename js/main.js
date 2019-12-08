@@ -215,18 +215,22 @@ function levelBall(id){
     if(buy100){
       tempBall.rank += 100;
       tempBall.cost = value;
+      document.getElementById("buy100").innerHTML = buy100;
     }
     if(buy10){
       tempBall.rank += 10;
       tempBall.cost = value;
+      document.getElementById("buy10").innerHTML = buy10;
     }
     if(buy1){
       tempBall.rank += 1;
       tempBall.cost = value;
+      document.getElementById("buy1").innerHTML = buy1;
     }
     if(buymax){
-      tempBall.rank *= 2;
+      tempBall.rank += -1;
       tempBall.cost = value;
+      document.getElementById("buymax").innerHTML = buymax;
     }
     if(notationScientfic){ 
         document.getElementById(id+"C").innerHTML = numberformat.format(Math.floor(tempBall.cost*Math.pow(1.15,tempBall.rank)),{format: 'scientific'}); 
