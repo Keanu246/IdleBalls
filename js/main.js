@@ -161,8 +161,17 @@ function clickLevel(){
     } 
     for(var y = 0; y < 5;y++){ 
       clickBalls[y].rank = click.rank; 
-      clickBalls[y].bDamage = click.bDamage; 
+      clickBalls[y].bDamage = click.bDamage;
     } 
+    if(buy100>=Math.floor(click.bCost*Math.pow(click.rank))){
+      click.rank += 100;
+    }
+    if(buy10>=Math.floor(click.bCost*Math.pow(click.rank))){
+      click.rank += 10;
+    }
+    if(buy1>=Math.floor(click.bCost*Math.pow(click.rank))){
+      click.rank += 1;
+    }
     if(notationScientfic){ 
         document.getElementById("CC").innerHTML = numberformat.format(Math.floor(click.bCost*Math.pow(click.multi,click.rank)),{format: 'scientific'}); 
     } 
