@@ -66,7 +66,7 @@ var autoExcites;
 var buy1 = 1;
 var buy10 = 10;
 var buy100 = 100;
-var buymax = -1;
+var buymax = 999;
 //CPS stuff 
 var cps = document.getElementById("cps"); 
 var count = 0; 
