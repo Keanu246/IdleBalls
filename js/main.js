@@ -166,22 +166,18 @@ function clickLevel(){
     } 
     if(buy100){
       click.rank += 100;
-      click.bCost = value;
       document.getElementById("buy100").innerHTML = buy100;
     }
     if(buy10){
       click.rank += 10;
-      click.bCost = value;
       document.getElementById("buy10").innerHTML = buy10;
     }
     if(buy1){
       click.rank += 1;
-      click.bCost = value;
       document.getElementById("buy1").innerHTML = buy1;
     }
     if(buymax){
-      click.rank += 999;
-      click.bCost = value;
+      click.rank += 500;
       document.getElementById("buymax").innerHTML = buymax;
     }
     if(notationScientfic){ 
@@ -214,22 +210,18 @@ function levelBall(id){
     } 
     if(buy100){
       tempBall.rank += 100;
-      tempBall.cost = value;
       document.getElementById("buy100").innerHTML = buy100;
     }
     if(buy10){
       tempBall.rank += 10;
-      tempBall.cost = value;
       document.getElementById("buy10").innerHTML = buy10;
     }
     if(buy1){
       tempBall.rank += 1;
-      tempBall.cost = value;
       document.getElementById("buy1").innerHTML = buy1;
     }
     if(buymax){
-      tempBall.rank += -1;
-      tempBall.cost = value;
+      tempBall.rank += 500;
       document.getElementById("buymax").innerHTML = buymax;
     }
     if(notationScientfic){ 
