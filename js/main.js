@@ -164,22 +164,6 @@ function clickLevel(){
       clickBalls[y].rank = click.rank; 
       clickBalls[y].bDamage = click.bDamage;
     } 
-    if(buy100){
-      click.rank += 100;
-      document.getElementById("buy100").innerHTML = buy100;
-    }
-    if(buy10){
-      click.rank += 10;
-      document.getElementById("buy10").innerHTML = buy10;
-    }
-    if(buy1){
-      click.rank += 1;
-      document.getElementById("buy1").innerHTML = buy1;
-    }
-    if(buymax){
-      click.rank += 500;
-      document.getElementById("buymax").innerHTML = buymax;
-    }
     if(notationScientfic){ 
         document.getElementById("CC").innerHTML = numberformat.format(Math.floor(click.bCost*Math.pow(click.multi,click.rank)),{format: 'scientific'}); 
     } 
@@ -209,19 +193,19 @@ function levelBall(id){
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
     if(buy100){
-      tempBall.rank += 100;
+      rank += 100;
       document.getElementById("buy100").innerHTML = buy100;
     }
     if(buy10){
-      tempBall.rank += 10;
+      rank += 10;
       document.getElementById("buy10").innerHTML = buy10;
     }
     if(buy1){
-      tempBall.rank += 1;
+      rank += 1;
       document.getElementById("buy1").innerHTML = buy1;
     }
     if(buymax){
-      tempBall.rank += 500;
+      rank += 500;
       document.getElementById("buymax").innerHTML = buymax;
     }
     if(notationScientfic){ 
