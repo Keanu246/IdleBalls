@@ -192,20 +192,9 @@ function levelBall(id){
       balls.push({active:true,x:rand(100,width-100),y:rand(100,height-100),dx:.707,dy:-.707,color:tempBall.color, 
         radius:tempBall.radius,id:tempBall.id,clone:true,speed:tempBall.speed}); 
     } 
-    if(buy100){
-      rank += 100;
-      document.getElementById("buy100").innerHTML = buy100;
-    }
-    if(buy10){
-      rank += 10;
-      document.getElementById("buy10").innerHTML = buy10;
-    }
-    if(buy1){
-      rank += 1;
-      document.getElementById("buy1").innerHTML = buy1;
-    }
     if(buymax){
-      rank += 500;
+      tempBall.rank += 999;
+      click.rank += 999;
       document.getElementById("buymax").innerHTML = buymax;
     }
     if(notationScientfic){ 
