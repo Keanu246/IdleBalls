@@ -32,7 +32,8 @@ var balls = [
   {active:false,x:600,y:400,dx:-.707,dy:.707,color:"#f7a233",radius:32,bDamage:1e24,rank:0,cost:1e28,id:21,clone:false,speed:7},
   {active:false,x:400,y:100,dx:-.707,dy:.707,color:"#A5F2F3",radius:38,bDamage:1e30,rank:0,cost:1e35,id:22,clone:false,speed:5},
   {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#61de2a",radius:24,bDamage:1e37,rank:0,cost:1e42,id:23,clone:false,speed:8},
-  {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#ff41ca",radius:18,bDamage:1e46,rank:0,cost:1e52,id:24,clone:false,speed:10}
+  {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#ff41ca",radius:18,bDamage:1e46,rank:0,cost:1e52,id:24,clone:false,speed:10},
+  {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FA8072",radius:16,bDamage:1e62,rank:0,cost:1e68,id:25,clone:false,speed:12}
 ];
 var clickBalls = [ 
   {active:false,x:300,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:100,rank:1,cost:10,id:100,clone:false,speed:4}, 
@@ -613,7 +614,8 @@ function prestige(){
   {active:false,x:600,y:400,dx:-.707,dy:.707,color:"#f7a233",radius:32,bDamage:1e23,rank:0,cost:1e28,id:21,clone:false,speed:7},
   {active:false,x:400,y:100,dx:-.707,dy:.707,color:"#A5F2F3",radius:38,bDamage:1e29,rank:0,cost:1e35,id:22,clone:false,speed:5},
   {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#61de2a",radius:24,bDamage:1e36,rank:0,cost:1e42,id:23,clone:false,speed:8},
-  {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#ff41ca",radius:18,bDamage:1e45,rank:0,cost:1e52,id:24,clone:false,speed:10}
+  {active:false,x:1000,y:200,dx:-.707,dy:.707,color:"#ff41ca",radius:18,bDamage:1e45,rank:0,cost:1e52,id:24,clone:false,speed:10},
+  {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FA8072",radius:16,bDamage:1e62,rank:0,cost:1e68,id:25,clone:false,speed:12}
 ]; 
       if(notationScientfic){ 
           for(var p = 0; p < startingBalls; p++){ 
